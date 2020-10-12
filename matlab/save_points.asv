@@ -1,0 +1,5 @@
+function save_points(pc)
+f_id = fopen(filename, 'w');
+fprintf(f_id, '{');  
+end
+
