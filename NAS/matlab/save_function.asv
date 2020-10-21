@@ -1,0 +1,11 @@
+function save_function(centers,up_centers,filename)
+f_id = fopen(filename, 'w');
+fprintf(f_id, '{');  
+
+for i = 1:size(centers, 1)
+  cx = centers(i, 1);
+  cy = centers(i, 2);
+  fprintf(f_id, 'exp(-((x-%f)*(x-%f)+(y-%f)*(y-%f))/0.5', cx, cx)
+end
+end
+
